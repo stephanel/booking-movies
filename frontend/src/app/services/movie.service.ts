@@ -13,4 +13,9 @@ export class MovieService {
     const url = 'http://localhost:3000/movies';
     return this.httpClient.get<MovieModel[]>(url);
   }
+
+  getMovieById(id: number): Observable<MovieModel> {
+    const url = 'http://localhost:3000/movies/' + id;
+    return this.httpClient.get<MovieModel>(url);
+  }
 }

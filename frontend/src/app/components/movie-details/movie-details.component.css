@@ -1,0 +1,29 @@
+.back-button {
+  float: right;
+}
+
+.movie-details {
+  display: flex;
+}
+
+.poster {
+  margin: 0 15px;
+  width: 150px;
+}
+
+.movie-stills {
+  display: flex;
+}
+
+.movie-stills img {
+  margin: 0 2px;
+  padding: 0;
+  height: 100px;
+  width: auto;
+  vertical-align: middle;
+}
+
+a.imdb-link:after {
+  font-family: "Material Icons";
+  content: "open_in_new";
+}

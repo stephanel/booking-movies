@@ -1,0 +1,52 @@
+<button
+  class="back-button"
+  mat-flat-button
+  color="primary"
+  [routerLink]="['/']"
+>
+  Back
+</button>
+
+<div *ngIf="movieDetails">
+  <h2>{{ movieDetails?.title }}</h2>
+
+  <p>
+    {{ movieDetails?.plot }}
+  </p>
+
+  <div class="movie-details">
+    <div>
+      <img
+        class="poster"
+        src="{{ movieDetails?.poster }}"
+        alt="{{ movieDetails?.title }}"
+      />
+    </div>
+    <div>
+      <p>Imdb Rating: {{ movieDetails?.imdbRating }} / 10</p>
+      <p *ngIf="locationIsDefined">Location: {{ movieDetails?.location }}</p>
+      <p *ngIf="languageIsDefined">Language: {{ movieDetails?.language }}</p>
+      <p *ngIf="soundEffectsAreDefined">
+        Sound Effects: {{ movieDetails?.soundEffects }}
+      </p>
+      <p>
+        <a
+          class="imdb-link"
+          href="https://www.imdb.com/title/{{ movieDetails?.imdbID }}/"
+          target="blank"
+          >See on IMDB</a
+        >
+      </p>
+    </div>
+  </div>
+
+  <div class="movie-stills">
+    <a
+      *ngFor="let still of movieDetails?.stills; let i = index"
+      href="{{ still }}"
+      target="_blank"
+    >
+      <img src="{{ still }}" alt="still-{{ i }}" />
+    </a>
+  </div>
+</div>
