@@ -1,0 +1,15 @@
+<form [formGroup]="searchForm" (submit)="onSubmit()">
+  <mat-form-field class="search-field" appearance="standard">
+    <mat-label>Search</mat-label>
+    <input matInput placeholder="Search" formControlName="title" />
+  </mat-form-field>
+
+  <button
+    type="submit"
+    mat-flat-button
+    color="primary"
+    [disabled]="formIsEmpty()"
+  >
+    Search
+  </button>
+</form>
