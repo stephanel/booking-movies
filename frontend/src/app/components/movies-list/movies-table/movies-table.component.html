@@ -3,23 +3,21 @@
   id="gridContainer"
   [dataSource]="movies"
   [showBorders]="true"
+  [columnAutoWidth]="true"
 >
+  <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+
   <dxo-header-filter [visible]="true"></dxo-header-filter>
 
   <dxi-column
     dataField="poster"
-    [width]="80"
     [allowFiltering]="false"
     [allowSorting]="false"
     cellTemplate="posterTemplate"
   ></dxi-column>
-  <dxi-column
-    dataField="title"
-    [width]="400"
-    cellTemplate="titleTemplate"
-  ></dxi-column>
-  <dxi-column dataField="language" [width]="150"></dxi-column>
-  <dxi-column dataField="location" [width]="150"></dxi-column>
+  <dxi-column dataField="title" cellTemplate="titleTemplate"></dxi-column>
+  <dxi-column dataField="language"></dxi-column>
+  <dxi-column dataField="location"></dxi-column>
   <dxi-column
     dataField="plot"
     cssClass="plot"
