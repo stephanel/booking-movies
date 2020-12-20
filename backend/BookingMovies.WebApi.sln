@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingMovies.Domain.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMovies.Core", "BookingMovies.Core\BookingMovies.Core.csproj", "{9D47B692-A411-4E28-94EB-8F55057FCC1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMovies.Infrastructure", "BookingMovies.Infrastructure\BookingMovies.Infrastructure.csproj", "{B0379E03-6E27-4664-AE64-DA2EE96FE2D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMovies.Infrastructure.Tests", "BookingMovies.Infrastructure.Tests\BookingMovies.Infrastructure.Tests.csproj", "{FF11E513-C374-4D2A-852A-C792E76C455F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{9D47B692-A411-4E28-94EB-8F55057FCC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D47B692-A411-4E28-94EB-8F55057FCC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D47B692-A411-4E28-94EB-8F55057FCC1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0379E03-6E27-4664-AE64-DA2EE96FE2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0379E03-6E27-4664-AE64-DA2EE96FE2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0379E03-6E27-4664-AE64-DA2EE96FE2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0379E03-6E27-4664-AE64-DA2EE96FE2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF11E513-C374-4D2A-852A-C792E76C455F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF11E513-C374-4D2A-852A-C792E76C455F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF11E513-C374-4D2A-852A-C792E76C455F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF11E513-C374-4D2A-852A-C792E76C455F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

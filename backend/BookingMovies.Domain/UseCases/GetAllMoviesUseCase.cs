@@ -1,6 +1,7 @@
 ﻿using BookingMovies.Core.Domain.Entities;
 using BookingMovies.Core.Domain.Interfaces;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace BookingMovies.Domain.UseCases
 {
@@ -13,9 +14,9 @@ namespace BookingMovies.Domain.UseCases
             this.movieRepository = movieRepository;
         }
 
-        public List<Movie> Execute()
+        public async Task<List<Movie>> Execute()
         {
-            return movieRepository.GetAll();
+            return await movieRepository.GetAll();
         }
     }
 }

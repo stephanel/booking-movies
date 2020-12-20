@@ -1,0 +1,93 @@
+[
+	{
+		"Id": 1,
+		"Language": "ENGLISH",
+		"Location": "DELHI",
+		"Plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+		"Poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UY215_.jpg",
+		"SoundEffects": [
+			"RX6",
+			"SDDS"
+		],
+		"Stills": [
+			"https://m.media-amazon.com/images/M/MV5BMTkzMTY0MjE5MV5BMl5BanBnXkFtZTcwODMxNDY3Mw@@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMTgxMTU1MDkwOV5BMl5BanBnXkFtZTcwMDQxNDY3Mw@@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMTM0NjUxMDk5MF5BMl5BanBnXkFtZTcwNDMxNDY3Mw@@._V1_.jpg"
+		],
+		"Title": "The Shawshank Redemption",
+		"ImdbID": "tt0111161",
+		"ListingType": "NOW_SHOWING",
+		"ImdbRating": 9.2
+	},
+	{
+		"Id": 2,
+		"Language": "ENGLISH",
+		"Location": "UNITED STATES",
+		"Plot": "A high-school boy is given the chance to write a story for Rolling Stone Magazine about an up-and-coming rock band as he accompanies them on their concert tour.",
+		"Poster": "https://m.media-amazon.com/images/M/MV5BMzY1ZjMwMGEtYTY1ZS00ZDllLTk0ZmUtYzA3ZTA4NmYwNGNkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
+		"SoundEffects": [],
+		"Stills": [
+			"https://m.media-amazon.com/images/M/MV5BNzc1NzE5NjE0NF5BMl5BanBnXkFtZTcwMjMxNDc3Mw@@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BNTczOTA3MjE5OV5BMl5BanBnXkFtZTYwODQ5Njc3._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMTIwNDkxNDUyNl5BMl5BanBnXkFtZTYwMjU5Njc3._V1_.jpg"
+		],
+		"Title": "Almost Famous",
+		"ImdbID": "tt0181875",
+		"ListingType": "NOW_SHOWING",
+		"ImdbRating": 7.9
+	},
+	{
+		"Id": 3,
+		"Language": "ENGLISH",
+		"Location": "LONDON",
+		"Plot": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
+		"Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_.jpg",
+		"SoundEffects": [],
+		"Stills": [
+			"https://m.media-amazon.com/images/M/MV5BMTU0NzMzODQ0N15BMl5BanBnXkFtZTgwMzA1MDg4NjM@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMTUwNDE3OTQ2N15BMl5BanBnXkFtZTYwNzM5NDM3._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMTcwODcxMTM1Nl5BMl5BanBnXkFtZTYwOTM5NDM3._V1_FMjpg_UX320_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMTU4NTYzNjczMl5BMl5BanBnXkFtZTYwMzQ5NDM3._V1_.jpg"
+		],
+		"Title": "Love Actually",
+		"ImdbID": "tt0314331",
+		"ListingType": "NOW_SHOWING",
+		"ImdbRating": 7.6
+	},
+	{
+		"Id": 4,
+		"Language": "FRENCH",
+		"Location": "PARIS",
+		"Plot": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.",
+		"Poster": "https://m.media-amazon.com/images/M/MV5BNDg4NjM1YjMtYmNhZC00MjM0LWFiZmYtNGY1YjA3MzZmODc5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
+		"SoundEffects": [],
+		"Stills": [
+			"https://m.media-amazon.com/images/M/MV5BMTA5OTI1NDI0MjNeQTJeQWpwZ15BbWU4MDk0Nzk4NzUz._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BNzgwNjA5ODc0M15BMl5BanBnXkFtZTgwMDU3OTg3NTM@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMjY4NTM0OTc3NF5BMl5BanBnXkFtZTcwNzU0MzU5Ng@@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMTc3MjM1NzEyOV5BMl5BanBnXkFtZTcwMzI1NDc3Mw@@._V1_.jpg"
+		],
+		"Title": "Le fabuleux destin d'Amélie Poulain",
+		"ImdbID": "tt0211915",
+		"ListingType": "NOW_SHOWING",
+		"ImdbRating": 8.3
+	},
+	{
+		"Id": 5,
+		"Language": "ITALIAN",
+		"Location": "UNITED STATES",
+		"Plot": "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+		"Poster": "https://m.media-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_FMjpg_UY393_.jpg",
+		"SoundEffects": [],
+		"Stills": [
+			"https://m.media-amazon.com/images/M/MV5BNmVmMjM5N2MtYTJkYS00OWQ1LWJmYjktZmZiZGE0ODVmZTU0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BNDY2MDYzMzgwNF5BMl5BanBnXkFtZTgwOTE0MDg5MTE@._V1_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BOTU5OTE0ODQ5NF5BMl5BanBnXkFtZTgwMjI0MDg5MTE@._V1_FMjpg_UX600_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BMjQ2MjE1MDA4NF5BMl5BanBnXkFtZTcwNzg4NjgyMw@@._V1_.jpg"
+		],
+		"Title": "Il buono, il brutto, il cattivo",
+		"ImdbID": "tt0060196",
+		"ListingType": "NOW_SHOWING",
+		"ImdbRating": 8.8
+	}
+]

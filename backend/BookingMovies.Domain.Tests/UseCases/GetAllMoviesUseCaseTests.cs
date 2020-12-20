@@ -5,16 +5,19 @@ using FizzWare.NBuilder;
 using Moq;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace BookingMovies.Domain.Tests.UseCases
 {
     public class GetAllMoviesUseCaseTests
     {
-        private readonly Mock<IMovieRepository> mockMovieRepository = new Mock<IMovieRepository>();
+        private readonly Mock<IMovieRepository> mockMovieRepository 
+            = new Mock<IMovieRepository>();
 
         [Fact]
-        public void ShouldReturnAllMovies()
+        [Trait("Category", "UnitTests")]
+        public async Task ShouldReturnAllMovies()
         {
             // Arrange
             int id = 1;
@@ -27,12 +30,12 @@ namespace BookingMovies.Domain.Tests.UseCases
 
             mockMovieRepository
                 .Setup(repository => repository.GetAll())
-                .Returns(movies);
+                .ReturnsAsync(movies);
 
             var sut = new GetAllMoviesUseCase(mockMovieRepository.Object);
 
             // act
-            var results = sut.Execute();
+            var results = await sut.Execute();
 
             // Assert
             Assert.Equal(3, results.Count);
