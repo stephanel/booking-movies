@@ -27,5 +27,11 @@ namespace BookingMovies.Infrastructure.Repositories
             var movie = movies.Single(movie => movie.Id == id);
             return await Task.FromResult(movie);
         }
+
+        public async Task<List<Movie>> Search(string query)
+        {
+            throw new System.NotImplementedException();
+        }
+
     }
 }
