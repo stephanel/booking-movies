@@ -1,10 +1,9 @@
 ﻿using BookingMovies.Core.Domain.Entities;
-using BookingMovies.Core.Domain.Interfaces.Repositories;
+using BookingMovies.Core.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
-using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;

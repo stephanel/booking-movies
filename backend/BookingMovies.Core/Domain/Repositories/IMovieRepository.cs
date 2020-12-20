@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace BookingMovies.Core.Domain.Interfaces.Repositories
+namespace BookingMovies.Core.Domain.Repositories
 {
     public interface IMovieRepository
     {

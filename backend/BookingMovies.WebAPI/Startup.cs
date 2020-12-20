@@ -1,4 +1,4 @@
-using BookingMovies.Core.Domain.Interfaces.Repositories;
+using BookingMovies.Core.Domain.Repositories;
 using BookingMovies.Domain.UseCases;
 using BookingMovies.Infrastructure.Repositories;
 using MediatR;

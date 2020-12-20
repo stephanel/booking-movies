@@ -1,9 +1,8 @@
 using BookingMovies.Core.Domain.Entities;
-using BookingMovies.Core.Domain.Interfaces.Repositories;
+using BookingMovies.Core.Domain.Repositories;
 using BookingMovies.Domain.UseCases;
 using FizzWare.NBuilder;
 using Moq;
-using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
