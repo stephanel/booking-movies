@@ -57,5 +57,28 @@ namespace BookingMovies.WebAPI.Tests
             Assert.NotNull(results);
             Assert.Equal(1, results.Id);
         }
+
+        [Fact]
+        [Trait("Category", "UnitTests")]
+        public async Task ShouldReturnMoviesThatMatchInputQuerie()
+        {
+            // Arrange
+            int movieId = 1;
+
+            mockMediator.Setup(mediator
+                => mediator.Send(It.IsAny<IRequest<List<Movie>>>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(new List<Movie>() { new Movie() { Id = movieId } });
+
+            var sut = new MoviesController(mockMediator.Object, mockLogger.Object);
+
+            var query = "super movie";
+
+            // Act
+            var results = await sut.Search(query);
+
+            // Assert
+            Assert.Single(results);
+            Assert.Equal(1, results[0].Id);
+        }
     }
 }

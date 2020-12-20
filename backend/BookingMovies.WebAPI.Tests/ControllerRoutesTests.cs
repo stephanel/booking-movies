@@ -36,6 +36,7 @@ namespace BookingMovies.WebAPI.Tests
         [Theory]
         [InlineData("/api/movies")]
         [InlineData("/api/movies/1")]
+        [InlineData("/api/movies/?q=test")]
         [Trait("Category", "IntegrationTests")]
         public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string url)
         {
