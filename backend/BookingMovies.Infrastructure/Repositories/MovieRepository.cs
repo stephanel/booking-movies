@@ -1,5 +1,6 @@
 ﻿using BookingMovies.Core.Domain.Entities;
 using BookingMovies.Core.Domain.Repositories;
+using BookingMovies.Infrastructure.Extensions;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -28,9 +29,18 @@ namespace BookingMovies.Infrastructure.Repositories
             return await Task.FromResult(movie);
         }
 
-        public async Task<List<Movie>> Search(string query)
+        public async Task<List<Movie>> Search(string searchedText)
         {
-            throw new System.NotImplementedException();
+            var results = movies
+                .Where(movie =>
+                    searchedText.IsIn(movie.Language)
+                    || searchedText.IsIn(movie.Location)
+                    || searchedText.IsIn(movie.Plot)
+                    || searchedText.IsIn(movie.Title)
+                )
+                .ToList();
+
+            return await Task.FromResult(results);
         }
 
     }

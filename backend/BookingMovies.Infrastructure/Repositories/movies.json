@@ -21,7 +21,7 @@
 	},
 	{
 		"Id": 2,
-		"Language": "ENGLISH",
+		"Language": "ENGLISH Super",
 		"Location": "UNITED STATES",
 		"Plot": "A high-school boy is given the chance to write a story for Rolling Stone Magazine about an up-and-coming rock band as he accompanies them on their concert tour.",
 		"Poster": "https://m.media-amazon.com/images/M/MV5BMzY1ZjMwMGEtYTY1ZS00ZDllLTk0ZmUtYzA3ZTA4NmYwNGNkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
@@ -39,7 +39,7 @@
 	{
 		"Id": 3,
 		"Language": "ENGLISH",
-		"Location": "LONDON",
+		"Location": "LONDON Super",
 		"Plot": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
 		"Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_.jpg",
 		"SoundEffects": [],
@@ -58,7 +58,7 @@
 		"Id": 4,
 		"Language": "FRENCH",
 		"Location": "PARIS",
-		"Plot": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.",
+		"Plot": "Amélie is an innocent Super and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.",
 		"Poster": "https://m.media-amazon.com/images/M/MV5BNDg4NjM1YjMtYmNhZC00MjM0LWFiZmYtNGY1YjA3MzZmODc5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
 		"SoundEffects": [],
 		"Stills": [
@@ -85,7 +85,7 @@
 			"https://m.media-amazon.com/images/M/MV5BOTU5OTE0ODQ5NF5BMl5BanBnXkFtZTgwMjI0MDg5MTE@._V1_FMjpg_UX600_.jpg",
 			"https://m.media-amazon.com/images/M/MV5BMjQ2MjE1MDA4NF5BMl5BanBnXkFtZTcwNzg4NjgyMw@@._V1_.jpg"
 		],
-		"Title": "Il buono, il brutto, il cattivo",
+		"Title": "Il buono, il brutto, il cattivo. Super",
 		"ImdbID": "tt0060196",
 		"ListingType": "NOW_SHOWING",
 		"ImdbRating": 8.8
