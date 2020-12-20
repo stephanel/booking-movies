@@ -37,6 +37,7 @@ namespace BookingMovies.Domain.Tests.UseCases
                 new CancellationToken());
 
             // Assert
+            Assert.NotNull(results);
             Assert.Equal(movieId, results.Id);
         }
     }

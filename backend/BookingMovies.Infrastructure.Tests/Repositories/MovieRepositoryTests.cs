@@ -26,7 +26,24 @@ namespace BookingMovies.Infrastructure.Tests.Repositories
             Assert.Equal("Love Actually", results[2].Title);
             Assert.Equal("Le fabuleux destin d'Amélie Poulain", results[3].Title);
             Assert.Equal("Il buono, il brutto, il cattivo", results[4].Title);
+        }
 
+        [Fact]
+        [Trait("Category", "IntegrationTests")]
+        public async Task ShouldQueryAMoviesByItsId()
+        {
+            // Arrange
+            var id = 1;
+
+            var sut = new MovieRepository();
+
+            // Act
+            var results = await sut.GetById(id);
+
+            // Assert
+            Assert.NotNull(results);
+            Assert.Equal(id, results.Id);
+            Assert.Equal("The Shawshank Redemption", results.Title);
         }
     }
 }

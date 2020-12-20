@@ -1,6 +1,7 @@
 ﻿using BookingMovies.Core.Domain.Entities;
 using BookingMovies.Core.Domain.Repositories;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace BookingMovies.Infrastructure.Repositories
@@ -21,9 +22,10 @@ namespace BookingMovies.Infrastructure.Repositories
             return await Task.FromResult(movies);
         }
 
-        public Task<Movie> GetById(int id)
+        public async Task<Movie> GetById(int id)
         {
-            throw new System.NotImplementedException();
+            var movie = movies.Single(movie => movie.Id == id);
+            return await Task.FromResult(movie);
         }
     }
 }
