@@ -19,16 +19,23 @@ namespace BookingMovies.WebAPI.Tests
         private readonly Mock<IMovieRepository> mockMovieRepository
             = new Mock<IMovieRepository>();
 
+        private readonly int movieId = 1;
+
         public ControllerRoutesTests(WebApplicationFactory<Startup> factory)
         {
             this.factory = factory;
 
             mockMovieRepository.Setup(repository => repository.GetAll())
                 .ReturnsAsync(new List<Movie>());
+
+            mockMovieRepository
+                .Setup(repository => repository.GetById(movieId))
+                .ReturnsAsync(new Movie() { Id = movieId });
         }
 
         [Theory]
         [InlineData("/api/movies")]
+        [InlineData("/api/movies/1")]
         [Trait("Category", "IntegrationTests")]
         public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string url)
         {

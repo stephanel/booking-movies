@@ -1,5 +1,6 @@
 ﻿using BookingMovies.Core.Domain.Entities;
 using BookingMovies.Domain.UseCases.GetAllMovies;
+using BookingMovies.Domain.UseCases.GetMovieById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -26,6 +27,13 @@ namespace BookingMovies.WebAPI.Controllers
         {
             logger.LogTrace("All movies requested!");
             return await this.mediator.Send(new GetAllMoviesMessage());
+        }
+
+        [HttpGet("{id}")]
+        public async Task<Movie> GetById(int id)
+        {
+            logger.LogTrace($"Movie requested by ID={id}.");
+            return await this.mediator.Send(new GetMovieByIdMessage(id));
         }
     }
 }
