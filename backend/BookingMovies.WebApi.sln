@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingMovies.Domain", "Boo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingMovies.Domain.Tests", "BookingMovies.Domain.Tests\BookingMovies.Domain.Tests.csproj", "{619512B4-6D35-43B2-90D9-70A07391FDEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMovies.Core", "BookingMovies.Core\BookingMovies.Core.csproj", "{9D47B692-A411-4E28-94EB-8F55057FCC1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingMovies.Core", "BookingMovies.Core\BookingMovies.Core.csproj", "{9D47B692-A411-4E28-94EB-8F55057FCC1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMovies.Infrastructure", "BookingMovies.Infrastructure\BookingMovies.Infrastructure.csproj", "{B0379E03-6E27-4664-AE64-DA2EE96FE2D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingMovies.Infrastructure", "BookingMovies.Infrastructure\BookingMovies.Infrastructure.csproj", "{B0379E03-6E27-4664-AE64-DA2EE96FE2D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMovies.Infrastructure.Tests", "BookingMovies.Infrastructure.Tests\BookingMovies.Infrastructure.Tests.csproj", "{FF11E513-C374-4D2A-852A-C792E76C455F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingMovies.Infrastructure.Tests", "BookingMovies.Infrastructure.Tests\BookingMovies.Infrastructure.Tests.csproj", "{FF11E513-C374-4D2A-852A-C792E76C455F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingMovies.WebAPI", "BookingMovies.WebAPI\BookingMovies.WebAPI.csproj", "{D84C0E1A-5B89-4A0E-817C-ED9F07664CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMovies.WebAPI.Tests", "BookingMovies.WebAPI.Tests\BookingMovies.WebAPI.Tests.csproj", "{FD8DB8FE-3E23-4BF7-A405-B99C0F8A9CB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{FF11E513-C374-4D2A-852A-C792E76C455F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF11E513-C374-4D2A-852A-C792E76C455F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF11E513-C374-4D2A-852A-C792E76C455F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D84C0E1A-5B89-4A0E-817C-ED9F07664CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D84C0E1A-5B89-4A0E-817C-ED9F07664CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D84C0E1A-5B89-4A0E-817C-ED9F07664CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D84C0E1A-5B89-4A0E-817C-ED9F07664CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8DB8FE-3E23-4BF7-A405-B99C0F8A9CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8DB8FE-3E23-4BF7-A405-B99C0F8A9CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8DB8FE-3E23-4BF7-A405-B99C0F8A9CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8DB8FE-3E23-4BF7-A405-B99C0F8A9CB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

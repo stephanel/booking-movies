@@ -1,11 +1,12 @@
 ﻿using BookingMovies.Core.Domain.Entities;
-using BookingMovies.Core.Domain.Interfaces;
+using BookingMovies.Core.Domain.Interfaces.Repositories;
+using BookingMovies.Core.Domain.Interfaces.UseCases;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BookingMovies.Domain.UseCases
 {
-    public class GetAllMoviesUseCase
+    public class GetAllMoviesUseCase : IGetAllMoviesUseCase
     {
         private readonly IMovieRepository movieRepository;
 

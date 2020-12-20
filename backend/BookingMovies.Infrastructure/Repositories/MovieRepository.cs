@@ -1,5 +1,5 @@
 ﻿using BookingMovies.Core.Domain.Entities;
-using BookingMovies.Core.Domain.Interfaces;
+using BookingMovies.Core.Domain.Interfaces.Repositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
