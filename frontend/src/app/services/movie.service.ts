@@ -3,12 +3,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MovieModel } from 'src/app/models/movie.model';
 import { SearchFormMoviesModel } from '../models/search-for-movies.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MovieService {
-  baseUrl = `http://localhost:3000/movies`;
+  baseUrl = `${environment.baseUrl}/movies`; //`http://localhost:3000/movies`;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -21,7 +22,7 @@ export class MovieService {
   }
 
   searchForMovies(params: SearchFormMoviesModel): Observable<MovieModel[]> {
-    return this.get<MovieModel[]>(`${this.baseUrl}?q=${params.title}`);
+    return this.get<MovieModel[]>(`${this.baseUrl}/search?q=${params.title}`);
   }
 
   private get<T>(url: string): Observable<T> {

@@ -27,6 +27,8 @@ namespace BookingMovies.WebAPI
 
             services.AddMediatR(typeof(GetAllMoviesMessage));
 
+            services.AddCors();// x => x.AddPolicy("MyPolicy"));
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -45,9 +47,12 @@ namespace BookingMovies.WebAPI
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                );
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
