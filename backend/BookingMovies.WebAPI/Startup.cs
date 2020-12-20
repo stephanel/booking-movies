@@ -1,5 +1,5 @@
 using BookingMovies.Core.Domain.Repositories;
-using BookingMovies.Domain.UseCases;
+using BookingMovies.Domain.UseCases.GetAllMovies;
 using BookingMovies.Infrastructure.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Builder;

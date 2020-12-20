@@ -1,6 +1,6 @@
 using BookingMovies.Core.Domain.Entities;
 using BookingMovies.Core.Domain.Repositories;
-using BookingMovies.Domain.UseCases;
+using BookingMovies.Domain.UseCases.GetAllMovies;
 using FizzWare.NBuilder;
 using Moq;
 using System.Linq;

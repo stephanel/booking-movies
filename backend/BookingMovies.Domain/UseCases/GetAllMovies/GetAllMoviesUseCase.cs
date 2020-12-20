@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BookingMovies.Domain.UseCases
+namespace BookingMovies.Domain.UseCases.GetAllMovies
 {
     public class GetAllMoviesUseCase : IRequestHandler<GetAllMoviesMessage, List<Movie>>
     {

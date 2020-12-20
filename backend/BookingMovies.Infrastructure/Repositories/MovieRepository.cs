@@ -20,5 +20,10 @@ namespace BookingMovies.Infrastructure.Repositories
         {
             return await Task.FromResult(movies);
         }
+
+        public Task<Movie> GetById(int id)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

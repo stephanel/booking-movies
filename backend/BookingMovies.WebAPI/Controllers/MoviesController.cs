@@ -1,5 +1,5 @@
 ﻿using BookingMovies.Core.Domain.Entities;
-using BookingMovies.Domain.UseCases;
+using BookingMovies.Domain.UseCases.GetAllMovies;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
