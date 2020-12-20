@@ -5,6 +5,7 @@ using FizzWare.NBuilder;
 using Moq;
 using System;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -35,7 +36,7 @@ namespace BookingMovies.Domain.Tests.UseCases
             var sut = new GetAllMoviesUseCase(mockMovieRepository.Object);
 
             // act
-            var results = await sut.Execute();
+            var results = await sut.Handle(new GetAllMoviesMessage(), new CancellationToken());
 
             // Assert
             Assert.Equal(3, results.Count);

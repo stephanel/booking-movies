@@ -1,5 +1,6 @@
 ﻿using BookingMovies.Core.Domain.Entities;
-using BookingMovies.Core.Domain.Interfaces.UseCases;
+using BookingMovies.Domain.UseCases;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
@@ -11,19 +12,20 @@ namespace BookingMovies.WebAPI.Controllers
     [Route("api/[controller]")]
     public class MoviesController : ControllerBase
     {
-        private readonly IGetAllMoviesUseCase useCase;
+        private readonly IMediator mediator;
         private readonly ILogger<MoviesController> logger;
 
-        public MoviesController(IGetAllMoviesUseCase useCase, ILogger<MoviesController> logger)
+        public MoviesController(IMediator mediator, ILogger<MoviesController> logger)
         {
-            this.useCase = useCase;
+            this.mediator = mediator;
             this.logger = logger;
         }
 
         [HttpGet]
         public async Task<List<Movie>> Get()
         {
-            return await this.useCase.Execute();
+            logger.LogTrace("All movies requested!");
+            return await this.mediator.Send(new GetAllMoviesMessage());
         }
     }
 }

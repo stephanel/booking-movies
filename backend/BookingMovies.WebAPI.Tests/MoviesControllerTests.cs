@@ -1,10 +1,10 @@
 using BookingMovies.Core.Domain.Entities;
-using BookingMovies.Core.Domain.Interfaces.UseCases;
 using BookingMovies.WebAPI.Controllers;
+using MediatR;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -12,8 +12,8 @@ namespace BookingMovies.WebAPI.Tests
 {
     public class MoviesControllerTests
     {
-        private readonly Mock<IGetAllMoviesUseCase> mockUseCase
-            = new Mock<IGetAllMoviesUseCase>();
+        private readonly Mock<IMediator> mockMediator
+            = new Mock<IMediator>();
 
         private readonly Mock<ILogger<MoviesController>> mockLogger
             = new Mock<ILogger<MoviesController>>();
@@ -23,10 +23,11 @@ namespace BookingMovies.WebAPI.Tests
         public async Task ShouldReturnAllMovies()
         {
             // Arrange
-            mockUseCase.Setup(useCase => useCase.Execute())
+            mockMediator.Setup(mediator 
+                => mediator.Send(It.IsAny<IRequest<List<Movie>>>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(new List<Movie>() { new Movie() { Id = 1 } });
 
-            var sut = new MoviesController(mockUseCase.Object, mockLogger.Object);
+            var sut = new MoviesController(mockMediator.Object, mockLogger.Object);
 
             // Act
             var results = await sut.Get();

@@ -1,12 +1,13 @@
 ﻿using BookingMovies.Core.Domain.Entities;
 using BookingMovies.Core.Domain.Interfaces.Repositories;
-using BookingMovies.Core.Domain.Interfaces.UseCases;
+using MediatR;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace BookingMovies.Domain.UseCases
 {
-    public class GetAllMoviesUseCase : IGetAllMoviesUseCase
+    public class GetAllMoviesUseCase : IRequestHandler<GetAllMoviesMessage, List<Movie>>
     {
         private readonly IMovieRepository movieRepository;
 
@@ -15,7 +16,7 @@ namespace BookingMovies.Domain.UseCases
             this.movieRepository = movieRepository;
         }
 
-        public async Task<List<Movie>> Execute()
+        public async Task<List<Movie>> Handle(GetAllMoviesMessage request, CancellationToken cancellationToken)
         {
             return await movieRepository.GetAll();
         }
